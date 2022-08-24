@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos App</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+            background-color: grey;
+        }
+        main {
+            margin: auto;
+            max-width: 284px;
+        }
+        picture, img {
+            max-width: 100%;
+            display: block;
+        }
+        .container-course {
+            padding: 90px 16px 12px;
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+        }
+        .container-info-driver {
+            height: 18vh;
+            margin-bottom: 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 8px;
+            place-items: center;
+        }
+        .photo-driver {
+            width: 90%;
+            height: 100%;
+            background-color: red;
+            border-radius: 8px;
+            object-position: center;
+            object-fit: cover;
+        }
+        .container-score {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+        .info-driver {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .txt {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4rem;
+        }
+        .txt-bolder {
+            font-weight: 1000;
+        }
+        .icon {
+            width: 52px;
+            height: 40px;
+            display: inline-block;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .icon-star {
+            width: 20px;
+            height: 20px;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/660/660464.png');
+        }
+        .icon-medal {
+            border-right: 1px solid silver;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/3176/3176367.png');
+        }
+        .contanier-courses-obtained {
+            margin-top: 48px;
+            list-style: none;
+        }
+        .course-obtained {
+            display: grid;
+            grid-template-columns: 50px auto;
+            align-items: center;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+            padding: 12px 0;
+            margin: 8px 0;
+        }
+        .name-course {
+            text-align: left;
+            padding-right: 14px;
+            margin-left: 12px;
+        }
+        .btn {
+            border: none;
+        }
+        .btn-back {
+            position: absolute;
+            top: 12px;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/545/545680.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: white;
+            background-size: 60%;
+            border-radius: 50%;
+            box-shadow: 0px 3px 4px rgb(0 0 0 / 55%);
+        }
+    </style>
+    <main>
+        <section class="container-course">
+            <button class="btn btn-back"></button>
+            <figure class="container-info-driver">
+                <img class="photo-driver" src="https://t2.uc.ltmcdn.com/es/posts/3/3/5/como_ser_un_buen_conductor_37533_600.jpg" alt="Foto aqui">
+                <figcaption class="info-driver">
+                    <div class="container-score txt">
+                        <span class="icon icon-star"></span>
+                        <p class="">4,8 - 340 viajes</p>
+                    </div>
+                    <p class="txt">Federico Hernández</p>
+                    <p class="txt">Taxi premium</p>
+                    <p class="txt">SHD211</p>
+                </figcaption>
+            </figure>
+            <h4 class="txt txt-bolder">Cursos y certificaciones que ha obtenido el conductor:</h4>
+            <ul class="contanier-courses-obtained">
+                <li class="course-obtained">
+                    <span class="icon icon-medal"></span>
+                    <p class="txt name-course">Escuela virtual para prevenir la violencia sexual en el transporte publico</p>
+                </li>
+                <hr>
+                <li class="course-obtained">
+                    <span class="icon icon-medal"></span>
+                    <p class="txt name-course">Ingles basico</p>
+                </li>
+                <hr>
+                <li class="course-obtained">
+                    <span class="icon icon-medal"></span>
+                    <p class="txt name-course">Competencia laborales</p>
+                </li>
+                <hr>
+                <li class="course-obtained">
+                    <span class="icon icon-medal"></span>
+                    <p class="txt name-course">Primeros auxilios</p>
+                </li>
+                <hr>
+            </ul>
+        </section>
+    </main>
+    
+</body>
+</html>
