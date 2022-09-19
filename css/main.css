@@ -1,0 +1,141 @@
+@supports (font-variation-settings: normal) 
+{
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('/css/font/Montserrat-VariableFont_wght.ttf');
+        font-weight: 100 1000;
+        font-display: swap;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    background-color: grey;
+    font-family: 'Montserrat',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* main {
+    margin: auto;
+    max-width: 284px;
+} */
+picture, img {
+    max-width: 100%;
+    display: block;
+}
+.container-course {
+    margin: 0 auto;
+    padding: 90px 16px 12px;
+    width: 100%;
+    max-width: 360px;
+    height: 100vh;
+    background-color: white;
+}
+.container-info-driver {
+    height: 18vh;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+}
+.photo-driver {
+    width: 137px;
+    aspect-ratio: 1/1;
+    background-color: red;
+    border-radius: 8px;
+    object-position: center;
+    object-fit: cover;
+}
+.container-score {
+    display: flex;
+    column-gap: 8px;
+    align-items: end;
+}
+.info-driver {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.txt {
+    font-size: 1.6rem;
+}
+.txt-sm {
+    font-size: 1.5rem;
+}
+.txt-md {
+    font-size: 1.8rem;
+}
+.txt-bolder {
+    font-weight: 1000;
+}
+.icon {
+    width: 52px;
+    height: 40px;
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon-star {
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/icons/star.svg');
+}
+.icon-medal {
+    border-right: 1px solid silver;
+}
+.medal-purple {
+    background-image: url('/assets/icons/medalla-morada.svg');
+}
+.medal-blue {
+    background-image: url('/assets/icons/medalla-azul.svg');
+}
+.medal-dark-blue {
+    background-image: url('/assets/icons/medalla-azul-oscuro.svg');
+}
+.medal-green {
+    background-image: url('/assets/icons/medalla-verde.svg');
+}
+.medal-yellow {
+    background-image: url('/assets/icons/medalla-amarillo.svg');
+}
+.contanier-courses-obtained {
+    max-width: 317px;
+    margin-top: 48px;
+    list-style: none;
+
+}
+.course-obtained {
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-items: center;
+    box-shadow: 0px 2px 7px 0px #00000026;
+    padding: 12px 0;
+    margin: 8px 0;
+}
+.name-course {
+    text-align: left;
+    padding-right: 14px;
+    margin-left: 12px;
+}
+.btn {
+    border: none;
+    cursor: pointer;
+}
+.btn-back {
+    position: absolute;
+    top: 12px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/545/545680.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    background-size: 60%;
+    border-radius: 50%;
+    box-shadow: 0px 3px 4px rgb(0 0 0 / 55%);
+}
